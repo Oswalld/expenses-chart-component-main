@@ -1,0 +1,215 @@
+body{
+    background-color: $Cream;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+}
+
+
+main{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.expenses-component{
+    margin: 0 1.2rem;
+    width: 350px;
+}
+
+.expenses-component-top-part{
+    background-color: $Soft-red;
+    border-radius: 10px;
+    color: $Very-pale-orange;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.6rem 1.5rem;
+    margin-bottom: 1.2rem;
+
+    h2{
+        font-size: 1.1rem;
+        font-weight: 100;
+    }
+    .balance{
+        font-size: 1.8rem;
+        font-weight: 700;
+    }
+}
+
+.expenses-component-bottom-part{
+    background-color: $Very-pale-orange;
+    border-radius: 10px;
+    padding: 1.6rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+
+    h1{
+        font-size: 1.45rem;
+        font-weight: 700;
+    }
+
+    .line{
+        border: 1px solid $Cream;
+        border-radius: 1px;
+        width: 100%;
+    }
+
+    .expenses-total{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        .money-spent{
+            font-weight: 700;
+            font-size: 2rem;
+            color: $Dark-brown;
+        }
+
+        .expenses-total-right-part{
+            text-align: right;
+            margin-bottom: 8px;
+
+            div{
+                font-weight: 700;
+                font-size: 1.1rem;
+                color: $Dark-brown;
+            }
+        }
+        p{
+            color: $Medium-brown;
+            font-size: 1rem;
+        }
+    }
+}
+
+.chart{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    .component-chart{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 10px;
+        height: 200px;
+
+        .pop-up{
+            width: 140%;
+            height: 40px;
+            background-color: $Dark-brown;
+            color: $Very-pale-orange;
+            border-radius: 5px;
+            font-size: 1.2px;
+            opacity: 0;
+
+        }
+
+        :nth-child(2){
+            position: relative;
+            width: 30px;
+            bottom: 0;
+            background-color: $Soft-red;
+            border-radius: 4px;
+
+            &:hover{
+                cursor: pointer;
+                opacity: 0.5;
+            }
+        }
+
+        p{
+            font-size: 0.8rem;
+            color: $Medium-brown;
+        }
+
+        .chart-bar-1{
+            height: 40px;
+        }
+        .chart-bar-2{
+            height: 90px;
+        }
+        .chart-bar-3{
+            height: 130px;
+            background-color: $Cyan;
+        }
+        .chart-bar-4{
+            height: 80px;
+        }
+        .chart-bar-5{
+            height: 60px;
+        }
+        .chart-bar-6{
+            height: 110px;
+        }
+        .chart-bar-7{
+            height: 65px;
+        }
+    }
+}
+
+
+
+@media screen and (min-width : 900px) {
+    .expenses-component{
+        width: 450px;
+    }
+
+    .expenses-component-top-part{
+        border-radius: 20px;
+        padding: 2rem;
+        margin-bottom: 1.5rem;
+
+        .balance{
+            font-size: 2rem;
+        }
+    }
+
+    .expenses-component-bottom-part{
+        border-radius: 20px;
+        padding: 2rem;
+        gap: 2rem;
+    
+        h1{
+            font-size: 1.85rem;
+        }
+    
+        .expenses-total{
+    
+            .money-spent{
+                font-size: 2.8rem;
+            }
+    
+            .expenses-total-right-part{
+                margin-bottom: 12px;
+    
+                div{
+                    font-size: 1.2rem;
+                }
+            }
+            p{
+                font-size: 1rem;
+            }
+        }
+    }
+    
+    .chart{
+        .component-chart{
+            gap: 5px;
+    
+            :nth-child(2){
+                width: 42px;
+                border-radius: 5px;
+            }
+        }
+    }
+}
