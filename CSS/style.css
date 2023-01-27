@@ -169,23 +169,32 @@ main {
   align-items: center;
   justify-content: flex-end;
   gap: 10px;
-  height: 200px;
+  height: 230px;
+  margin-top: -30px;
+  overflow-y: visible;
 }
 .chart .component-chart .pop-up {
-  width: 140%;
-  height: 40px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 135%;
+  height: 38px;
   background-color: hsl(25deg, 47%, 15%);
-  color: hsl(33deg, 100%, 98%);
   border-radius: 5px;
-  font-size: 1.2px;
-  opacity: 0;
+}
+.chart .component-chart .pop-up p {
+  color: hsl(33deg, 100%, 98%);
+  font-size: 0.8rem;
+  font-weight: 900;
 }
 .chart .component-chart :nth-child(2) {
   position: relative;
   width: 30px;
   bottom: 0;
+  height: 0;
   background-color: hsl(10deg, 79%, 65%);
   border-radius: 4px;
+  transition: opacity 0.1s ease-in-out;
 }
 .chart .component-chart :nth-child(2):hover {
   cursor: pointer;
@@ -194,28 +203,6 @@ main {
 .chart .component-chart p {
   font-size: 0.8rem;
   color: hsl(28deg, 10%, 53%);
-}
-.chart .component-chart .chart-bar-1 {
-  height: 40px;
-}
-.chart .component-chart .chart-bar-2 {
-  height: 90px;
-}
-.chart .component-chart .chart-bar-3 {
-  height: 130px;
-  background-color: hsl(186deg, 34%, 60%);
-}
-.chart .component-chart .chart-bar-4 {
-  height: 80px;
-}
-.chart .component-chart .chart-bar-5 {
-  height: 60px;
-}
-.chart .component-chart .chart-bar-6 {
-  height: 110px;
-}
-.chart .component-chart .chart-bar-7 {
-  height: 65px;
 }
 
 @media screen and (min-width: 900px) {

@@ -101,25 +101,34 @@ main{
         align-items: center;
         justify-content: flex-end;
         gap: 10px;
-        height: 200px;
+        height: 230px;
+        margin-top: -30px;
+        overflow-y: visible;
 
         .pop-up{
-            width: 140%;
-            height: 40px;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            width: 135%;
+            height: 38px;
             background-color: $Dark-brown;
-            color: $Very-pale-orange;
             border-radius: 5px;
-            font-size: 1.2px;
-            opacity: 0;
-
+            
+            p{
+                color: $Very-pale-orange;
+                font-size: 0.8rem;
+                font-weight: 900;
+            }
         }
 
         :nth-child(2){
             position: relative;
             width: 30px;
             bottom: 0;
+            height: 0;
             background-color: $Soft-red;
             border-radius: 4px;
+            transition: opacity 0.1s ease-in-out;
 
             &:hover{
                 cursor: pointer;
@@ -131,31 +140,10 @@ main{
             font-size: 0.8rem;
             color: $Medium-brown;
         }
-
-        .chart-bar-1{
-            height: 40px;
-        }
-        .chart-bar-2{
-            height: 90px;
-        }
-        .chart-bar-3{
-            height: 130px;
-            background-color: $Cyan;
-        }
-        .chart-bar-4{
-            height: 80px;
-        }
-        .chart-bar-5{
-            height: 60px;
-        }
-        .chart-bar-6{
-            height: 110px;
-        }
-        .chart-bar-7{
-            height: 65px;
-        }
     }
 }
+
+
 
 
 
