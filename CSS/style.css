@@ -205,7 +205,7 @@ main {
 
 @media screen and (min-width: 900px) {
   .expenses-component {
-    width: 450px;
+    width: 500px;
   }
   .expenses-component-top-part {
     border-radius: 20px;
