@@ -191,10 +191,8 @@ main {
   position: relative;
   width: 30px;
   bottom: 0;
-  height: 0;
   background-color: hsl(10deg, 79%, 65%);
   border-radius: 4px;
-  transition: opacity 0.1s ease-in-out;
 }
 .chart .component-chart :nth-child(2):hover {
   cursor: pointer;
